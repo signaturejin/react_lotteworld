@@ -108,6 +108,9 @@ body {
   border: none;
   background-color: #f8f8f8;
 }
+#header .h-bot {
+  border-bottom: 1px solid #e1e1e1;
+}
 #header .h-bot .center .logo {
   padding: 13px 0;
 }
@@ -138,6 +141,89 @@ body {
   font-size: 14px;
   color: #7a0ae1;
   margin-top: 7px;
+}
+
+#container .benefit {
+  display: flex;
+  justify-content: center;
+}
+#container .benefit .center {
+  width: 73%;
+}
+#container .benefit .center .title {
+  text-align: center;
+  padding: 130px 0 35px;
+  font-size: 35px;
+}
+#container .benefit .center .title span {
+  font-weight: 700;
+}
+#container .benefit .center > p {
+  text-align: center;
+  font-size: 16px;
+  color: #9a9a9a;
+  margin-bottom: 60px;
+}
+#container .benefit .center .list-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+#container .benefit .center .list-wrap .list {
+  width: 25%;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+#container .benefit .center .list-wrap .list a {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#container .benefit .center .list-wrap .list a::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 3px solid #6a20df;
+  box-sizing: border-box;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: all 0.5s;
+}
+#container .benefit .center .list-wrap .list a img {
+  margin: 30px auto;
+  display: block;
+}
+#container .benefit .center .list-wrap .list a .price {
+  padding-left: 30px;
+  font-size: 16px;
+  color: #6a20df;
+  margin-bottom: 20px;
+}
+#container .benefit .center .list-wrap .list a .sub-title {
+  font-size: 21px;
+  font-weight: 700;
+  padding: 0 30px 40px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#container .benefit .center .list-wrap .list:hover a::before {
+  opacity: 1;
+}
+#container .benefit .center .more-btn {
+  display: block;
+  margin: 60px auto 120px;
+  background-color: #6115eb;
+  width: 220px;
+  line-height: 55px;
+  text-align: center;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 17px;
 }
 
 #footer > div {
