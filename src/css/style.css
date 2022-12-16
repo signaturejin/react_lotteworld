@@ -675,6 +675,10 @@ body {
   font-size: 10px;
   color: #767676;
   position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  cursor: pointer;
 }
 #help .bot p::after {
   content: "";

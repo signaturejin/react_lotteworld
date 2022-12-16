@@ -27,13 +27,13 @@ const Attraction = () => {
   return (
     <div className='attraction' style={{backgroundImage: "url(/img/attr_bg.jpg)"}}>
       <div className='center'>
-        <h2 className='title' data-aos="fade-up" data-aos-duration="500" data-aos-delay="1500">재미있고 즐거운 <span>다양한 어트랙션!</span></h2>
-        <ul className='tab-menu' data-aos="fade-up" data-aos-duration="500" data-aos-delay="1600">
+        <h2 className='title' data-aos="fade-up" data-aos-duration="500" data-aos-delay="1100">재미있고 즐거운 <span>다양한 어트랙션!</span></h2>
+        <ul className='tab-menu' data-aos="fade-up" data-aos-duration="500" data-aos-delay="1200">
             <li className='on'><a href='#'>아이와 함께</a></li>
             <li><a href='#'>야외에서 신나게</a></li>
             <li><a href='#'>실내에서 쾌적하게</a></li>
         </ul>
-        <div className='tab-wrap' data-aos="fade-up" data-aos-duration="500" data-aos-delay="1700">
+        <div className='tab-wrap' data-aos="fade-up" data-aos-duration="500" data-aos-delay="1300">
             <div className='tab-box on'>
                 {
                     tData1.map((item,index)=>{
