@@ -1,10 +1,40 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import GnbMenu from './GnbMenu'
 import GnbWrap from './GnbWrap'
 // import { Link } from 'react-router-dom'
 
-const header = () => {
+const Header = () => {
+    
+    useEffect(()=>{
+    
+      const header = document.querySelector("#header");
+      const cont2 = document.querySelector(".bannerSlide");
+
+      window.addEventListener("scroll",()=>{
+
+        let scTop = window.scrollY;
+        let cont2Top = cont2.offsetTop;
+
+        console.log(cont2Top);
+
+        // if(scTop >= cont2Top){
+        //     header.classList.add("on");
+        // }
+        // else if (scTop < cont2Top){
+        //     header.classList.remove("on");
+        // }
+
+        if(scTop >= 146){
+            header.classList.add("on");
+        }
+        else {
+            header.classList.remove("on");
+        }
+
+      });
+    })
+
   return (
     <div id='header'>
         <div className='h-top'>
@@ -59,4 +89,4 @@ const header = () => {
   )
 }
 
-export default header
+export default Header

@@ -5,9 +5,9 @@ const Benefit = () => {
   return (
     <div className='benefit'>
         <div className='center'>
-            <h2 className='title'><span>나에게 꼭 맞는 혜택</span> 알아볼까요?</h2>
-            <p>현재 진행 중인 할인혜택을 알아보세요.</p>
-            <div className='list-wrap'>
+            <h2 className='title' data-aos="fade-up" data-aos-duration="500" data-aos-delay="1000"><span>나에게 꼭 맞는 혜택</span> 알아볼까요?</h2>
+            <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="1100">현재 진행 중인 할인혜택을 알아보세요.</p>
+            <div className='list-wrap' data-aos="fade-up" data-aos-duration="500" data-aos-delay="1200">
                 {
                     benefit.map((item,index)=>{
                         return(
