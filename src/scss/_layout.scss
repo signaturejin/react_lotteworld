@@ -6,7 +6,7 @@
     &.on {
         .h-top {display: none;}
     }
-    > div {
+    > .h-top,.h-bot {
         width: 100%; display: flex; justify-content: center;
         .center {width: 73%; display: flex; align-items: center; justify-content: space-between;}
     }
@@ -73,6 +73,21 @@
     .h-bot {
         border-bottom: 1px solid #e1e1e1;
         background-color: #fff;
+        position: relative;
+        .gnbBg {
+            position: absolute; left: 0; top: 99px;
+            width: 100%; display: flex; justify-content: center;
+            background-color: orange;
+            .center {
+                width: 73%; align-items: stretch;
+                .left {
+                    display: flex; justify-content: space-between;
+                }
+                .right {
+                    width: 463px; height: 336px;
+                }
+            }
+        }
         .center {
             .logo {padding: 13px 0;}
             .gnbWrap {
@@ -84,10 +99,6 @@
                         font-weight: 500;
                         font-size: 16px;
                     }
-                }
-                .gnbBg {
-                    position: absolute; left: 0; top: 0;
-                    // width: 100%; background-color: orange;
                 }
             }
             .b-r-ul {
@@ -108,9 +119,9 @@
 //중간 영역
 #container {
     position: relative; z-index: 1;
+    margin-top: 146px;
     //bannerSlide 영역
     .bannerSlide {
-        margin-top: 146px;
         .swiper {
             .swiper-wrapper {
                 .swiper-slide {

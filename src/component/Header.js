@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import GnbBg from './GnbBg'
 import GnbMenu from './GnbMenu'
 import GnbWrap from './GnbWrap'
 // import { Link } from 'react-router-dom'
@@ -16,7 +17,7 @@ const Header = () => {
         let scTop = window.scrollY;
         let cont2Top = cont2.offsetTop;
 
-        console.log(cont2Top);
+        console.log("배너시작위치" + cont2Top);
 
         // if(scTop >= cont2Top){
         //     header.classList.add("on");
@@ -67,6 +68,8 @@ const Header = () => {
             </div>
         </div>
         <div className='h-bot'>
+            {/* gnbBg */}
+            <GnbBg></GnbBg>
             <div className='center'>
                 <h1 className='logo'><Link to={"/"}><img src='/img/logo.png' /></Link></h1>
                 {/* <div className='gnb_wrap'>

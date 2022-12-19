@@ -7,27 +7,6 @@ const GnbWrap = () => {
     <div className='gnbWrap'>
         {/* depth1 */}
         <GnbMenu></GnbMenu>
-        <div className='gnbBg'>
-            {/* left */}
-            {/* <div className='left'>
-                <img src='/img/gnb-timer.png' />
-            </div> */}
-
-            {/* mid */}
-            <ul className='sub'>
-                {
-                    gnbMenu.map((gnb,index)=>{
-                        gnb.depth2.map((sub,index)=>{
-                            return(
-                                <li key={index}><a href='#'>{sub}</a></li>
-                            )
-                        })
-                    })
-                }
-            </ul>
-
-            {/* right */}
-        </div>
     </div>
   )
 }

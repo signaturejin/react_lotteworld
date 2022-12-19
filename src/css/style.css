@@ -34,12 +34,12 @@ body {
 #header.on .h-top {
   display: none;
 }
-#header > div {
+#header > .h-top, #header .h-bot {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-#header > div .center {
+#header > .h-top .center, #header .h-bot .center {
   width: 73%;
   display: flex;
   align-items: center;
@@ -116,6 +116,28 @@ body {
 #header .h-bot {
   border-bottom: 1px solid #e1e1e1;
   background-color: #fff;
+  position: relative;
+}
+#header .h-bot .gnbBg {
+  position: absolute;
+  left: 0;
+  top: 99px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: orange;
+}
+#header .h-bot .gnbBg .center {
+  width: 73%;
+  align-items: stretch;
+}
+#header .h-bot .gnbBg .center .left {
+  display: flex;
+  justify-content: space-between;
+}
+#header .h-bot .gnbBg .center .right {
+  width: 463px;
+  height: 336px;
 }
 #header .h-bot .center .logo {
   padding: 13px 0;
@@ -130,11 +152,6 @@ body {
   margin: 0 32px;
   font-weight: 500;
   font-size: 16px;
-}
-#header .h-bot .center .gnbWrap .gnbBg {
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 #header .h-bot .center .b-r-ul {
   display: flex;
@@ -160,8 +177,6 @@ body {
 #container {
   position: relative;
   z-index: 1;
-}
-#container .bannerSlide {
   margin-top: 146px;
 }
 #container .bannerSlide .swiper .swiper-wrapper .swiper-slide {
