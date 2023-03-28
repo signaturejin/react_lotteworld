@@ -1,0 +1,115 @@
+@media screen and (max-width:"1200px"){
+    // header 영역
+    #header {
+        > section {
+            .center {width: 82%;}
+        }
+        .h-top {
+            .center {
+                .left {
+                    > ul {
+                        > li {
+                            &::after {right: -10px;}
+                            &:first-child {margin: 0 10px 0 0;}
+                            margin: 0 10px;
+                            a {
+                                img {width: 21px; height: 21px;}
+                                span {font-size: 11px;}
+                            }
+                        }
+                    }
+                }
+                .right {
+                    > ul {
+                        > li {
+                            a {font-size: 11px;}
+                        }
+                    }
+                    .l-ul {
+                        li {
+                            &:last-child {margin-right: 10px !important;}
+                        }
+                    }
+                    .language {width: 50px;}
+                }
+            }
+        }
+        .h-bot {
+            .center {
+                .logo {
+                    a {
+                        img {width: 85px; height: 60px;}
+                    }
+                }
+                .gnbWrap {
+                    .gnb {
+                        > ul {
+                            > li {
+                                margin: 0 13px;
+                                a {font-size: 14px;}
+                            }
+                        }
+                    }
+                }
+                .b-r-ul {
+                    li {
+                        a {
+                            img {width: 25px; height: 25px;}
+                            p {font-size: 13px;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // container 영역
+    #container {
+        // slide 영역
+        .bannerSlide {
+            margin-top: 133px;
+        }
+        // benefit 영역
+        .benefit {
+            .center {
+                width: 82%;
+                .list-wrap {
+                    .list {
+                        a {
+                            img {max-width: 100%;}
+                            .price {font-size: 15px;}
+                            .sub-title {font-size: 18px;}
+                        }
+                    }
+                }
+            }
+        }
+        // attraction 영역
+        .attraction {
+            .center {
+                width: 82%;
+                padding-bottom: 2380px;
+                .tab-wrap {
+                    .tab-box {
+                        .list {
+                            width: 49%;
+                            height: 350px;
+                            padding-bottom: 18%;
+                            margin-bottom: 2% !important;
+                            &:first-child,&:last-child {width: 100%;}
+                            a {
+                                display: block;
+                                width: 100%; height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // news 영역
+        .news {
+            .center {
+                width: 82%;
+            }
+        }
+    }
+}

@@ -12,7 +12,7 @@ const Container = () => {
         <BannerSlide></BannerSlide>
         <ParkDate></ParkDate>
         <Benefit></Benefit>
-        <Parade></Parade>
+        {/* <Parade></Parade> */}
         <Attraction></Attraction>
         <News></News>
     </main>
